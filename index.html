@@ -1,12 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <h1>Hello world</h1>
-    
+    <header class="header">
+        <nav class="header__nav">
+            <div class="container">
+                <input id="menu-burger" class="header__input header__input--open" type="checkbox">
+                <ul class="menu">
+                    <li class="menu__item--close"><label for="menu-burger">
+                            <img src="./src/images/icons/close.svg" alt="parrot wing exchange">
+                        </label></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Credits</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Exchange</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Partners</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Stock</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Holding</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="header__bottom">
+            <div class="container">
+                <div class="header__icons">
+                    <label for="menu-burger">
+                        <img src="./src/images/icons/menu.svg" alt="parrot wing exchange">
+                    </label>
+                    <img src="./src/images/icons/search.svg" alt="parrot wing exchange">
+                </div>
+            </div>
+            <h1 class="header__title">ParrotWings Exchange</h1>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="parrots">
+            <div class="container">
+                <div class="parrots__main">
+                    <div class="parrots__left">
+                        <div class="parrots__top">
+                            <h2>ParrotWings Exchange</h2>
+                            <div class="parrots__search">
+                                <input type="text" placeholder="Search...">
+                                <img class="parrots__search__icon" src="./src/images/icons/search-gray.svg"
+                                    alt="parrot wing">
+                            </div>
+                        </div>
+                        <h3 class="parrots__subtitle">Products</h3>
+                        <div class="parrots__cards">
+                            <div class="parrots__item">
+                                <div class="parrots__item__cover">
+                                    <img src="./src/images/parrots-8.png" alt="parrots">
+                                </div>
+                                <span class="parrots__item__span">2 props</span>
+                                <h4 class="parrots__item__title">Unlimited exchange</h4>
+                                <button class="parrots__item__btn">Order</button>
+                                <div class="parrots__item__modal">
+                                    <h5>Popup header</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore. </p>
+                                    <img class="parrots__item__modal__polygon" src="./src/images/icons/polygon.svg"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="parrots__item">
+                                <div class="parrots__item__cover">
+                                    <img src="./src/images/parrots-7.png" alt="parrots">
+                                </div>
+                                <span class="parrots__item__span">1 prop</span>
+                                <h4 class="parrots__item__title">International excha...</h4>
+                                <button class="parrots__item__btn">Order</button>
+                                <div class="parrots__item__modal">
+                                    <h5>Popup header</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore. </p>
+                                    <img class="parrots__item__modal__polygon" src="./src/images/icons/polygon.svg"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="parrots__item">
+                                <div class="parrots__item__cover">
+                                    <img src="./src/images/parrots-6.png" alt="parrots">
+                                </div>
+                                <span class="parrots__item__span">3 props, all</span>
+                                <h4 class="parrots__item__title">Additional services</h4>
+                                <button class="parrots__item__btn">Order</button>
+                                <div class="parrots__item__modal">
+                                    <h5>Popup header</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore. </p>
+                                    <img class="parrots__item__modal__polygon" src="./src/images/icons/polygon.svg"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="parrots__item">
+                                <div class="parrots__item__cover">
+                                    <img src="./src/images/parrots-5.png" alt="parrots">
+                                </div>
+                                <span class="parrots__item__span">5 props</span>
+                                <h4 class="parrots__item__title">Support</h4>
+                                <button class="parrots__item__btn">Order</button>
+                                <div class="parrots__item__modal">
+                                    <h5>Popup header</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore. </p>
+                                    <img class="parrots__item__modal__polygon" src="./src/images/icons/polygon.svg"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="parrots__item">
+                                <div class="parrots__item__cover">
+                                    <img src="./src/images/parrots-4.png" alt="parrots">
+                                </div>
+                                <span class="parrots__item__span">2 props</span>
+                                <h4 class="parrots__item__title">Holiday works</h4>
+                                <button class="parrots__item__btn">Order</button>
+                                <div class="parrots__item__modal">
+                                    <h5>Popup header</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore. </p>
+                                    <img class="parrots__item__modal__polygon" src="./src/images/icons/polygon.svg"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="parrots__item">
+                                <div class="parrots__item__cover">
+                                    <img src="./src/images/parrots-3.png" alt="parrots">
+                                </div>
+                                <span class="parrots__item__span">not in access</span>
+                                <h4 class="parrots__item__title">Postal delivery</h4>
+                                <button class="parrots__item__btn">Order</button>
+                                <div class="parrots__item__modal">
+                                    <h5>Popup header</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore. </p>
+                                    <img class="parrots__item__modal__polygon" src="./src/images/icons/polygon.svg"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="parrots__item">
+                                <div class="parrots__item__cover">
+                                    <img src="./src/images/parrots-2.png" alt="parrots">
+                                </div>
+                                <span class="parrots__item__span">2 props</span>
+                                <h4 class="parrots__item__title">Document manag...</h4>
+                                <button class="parrots__item__btn">Order</button>
+                                <div class="parrots__item__modal">
+                                    <h5>Popup header</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore. </p>
+                                    <img class="parrots__item__modal__polygon" src="./src/images/icons/polygon.svg"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="parrots__item">
+                                <div class="parrots__item__cover">
+                                    <img src="./src/images/parrots-1.png" alt="parrots">
+                                </div>
+                                <span class="parrots__item__span">1 prop</span>
+                                <h4 class="parrots__item__title">Promotions</h4>
+                                <button class="parrots__item__btn">Order</button>
+                                <div class="parrots__item__modal">
+                                    <h5>Popup header</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore. </p>
+                                    <img class="parrots__item__modal__polygon" src="./src/images/icons/polygon.svg"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="parrots__more">More products...</button>
+                    </div>
+                    <div class="parrots__right">
+                        <div class="signup">
+                            <h2 class="signup__title">Sign Up</h2>
+                            <hr class="signup__divider" />
+                            <form action="#" class="signup__form">
+                                <input type="text" class="signup__input" placeholder="First Name" />
+                                <input type="text" class="signup__input" placeholder="Last Name" />
+                                <input type="email" class="signup__input" placeholder="Email" />
+                                <p class="signup__terms">
+                                    By creating a PW Exchange Account you acknowledge that you have read, understood and
+                                    agree to the
+                                    <a href="#" class="signup__link">Terms of Use and Privacy Policy</a>.
+                                </p>
+                                <button class="signup__button" type="submit">Sign up</button>
+                            </form>
+                        </div>
+                        <div class="monitor">
+                            <h2 class="monitor__title">Online Monitor</h2>
+                            <hr class="monitor__divider" />
+
+                            <div class="monitor__loader">
+                                <div class="monitor__spinner"></div>
+                                <p class="monitor__text">Loading...</p>
+                            </div>
+                            <button class="monitor__button" disabled>Connect</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__main">
+                <div class="footer__content">
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link"><img src="./src/images/icons/elephant.svg"
+                                alt="Evernote"></a>
+                        <a href="#" class="footer__social-link"><img src="./src/images/icons/facebook.svg"
+                                alt="Facebook"></a>
+                        <a href="#" class="footer__social-link"><img src="./src/images/icons/pinterest.svg"
+                                alt="Pinterest"></a>
+                        <a href="#" class="footer__social-link"><img src="./src/images/icons/twitter.svg"
+                                alt="Twitter"></a>
+                        <a href="#" class="footer__social-link"><img src="./src/images/icons/youtube.svg"
+                                alt="YouTube"></a>
+                        <a href="#" class="footer__social-link"><img src="./src/images/icons/github.svg"
+                                alt="GitHub"></a>
+                    </div>
+
+                    <div class="footer__columns">
+                        <div class="footer__column">
+                            <h3 class="footer__title">Recruitment Info</h3>
+                            <ul class="footer__list">
+                                <li class="footer__item">Candidate First Name: Username</li>
+                                <li class="footer__item">Candidate Last Name: Username</li>
+                                <li class="footer__item">Spent Time: X hours</li>
+                                <li class="footer__item">Email: username@server.name</li>
+                                <li class="footer__item">Test date: dd/mm/yyyy</li>
+                            </ul>
+                        </div>
+                        <div class="footer__column">
+                            <h3 class="footer__title">Resources</h3>
+                            <ul class="footer__list">
+                                <li class="footer__item">Loader icon - search on Fontello.com</li>
+                                <li class="footer__item">Icons - Flaticon</li>
+                                <li class="footer__item">Fonts - search in this file</li>
+                                <li class="footer__item">Background - standard situation: designer lose file</li>
+                            </ul>
+                        </div>
+                        <div class="footer__column">
+                            <h3 class="footer__title">Navigation</h3>
+                            <ul class="footer__list">
+                                <li class="footer__item"><a href="#" class="footer__link">Development</a></li>
+                                <li class="footer__item"><a href="#" class="footer__link">Application</a></li>
+                                <li class="footer__item"><a href="#" class="footer__link">Holding</a></li>
+                                <li class="footer__item"><a href="#" class="footer__link">About</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <div class="footer__copyright">
+                        <p>© Parrot Wings</p>
+                    </div>
+                    <div class="footer__browsers">
+                        <div class="footer__browsers-icons">
+                            <img src="./src/images/icons/firefox.svg" alt="Safari" class="footer__browser-icon">
+                            <img src="./src/images/icons/chrome.svg" alt="Chrome" class="footer__browser-icon">
+                            <img src="./src/images/icons/internet-explorer.svg" alt="Internet Explorer"
+                                class="footer__browser-icon">
+                            <img src="./src/images/icons/safari.svg" alt="Firefox" class="footer__browser-icon">
+                            <img src="./src/images/icons/opera.svg" alt="Opera" class="footer__browser-icon">
+                        </div>
+                        <p class="footer__browsers-text">
+                            Project should work on next stack:
+                            IE11, actual version of Firefox, Chrome
+                            on desktop and android, Opera (opera mini), Safari on mac and ios.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>

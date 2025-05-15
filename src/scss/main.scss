@@ -1,4 +1,13 @@
-body {
-    background-color: #000;
-    color: #fff
+@use './reset/reset';
+@use './base/base';
+@use './utils/variables';
+@use './mixins/mixins';
+@use './layout/header';
+@use './layout/parrots-main';
+@use './layout/footer';
+
+.main {
+    background-image: url('../images/main_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }

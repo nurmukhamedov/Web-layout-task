@@ -4,21 +4,21 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-  entry: './src/js/index.js',  
+  entry: './src/js/index.js',
   output: {
     filename: 'js/bundle.[contenthash].js',
     path: path.resolve(__dirname, 'dist'),
     assetModuleFilename: 'images/[name][ext]',
-    clean: true  
+    clean: true
   },
   module: {
     rules: [
       {
         test: /\.scss$/,
         use: [
-          MiniCssExtractPlugin.loader,  
-          'css-loader',                
-          'sass-loader'               
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'sass-loader'
         ]
       },
       {
@@ -46,7 +46,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      template: './index.html',  
+      template: './index.html',
       minify: {
         collapseWhitespace: true,
         removeComments: true
@@ -60,7 +60,9 @@ module.exports = {
     static: path.resolve(__dirname, 'dist'),
     port: 3000,
     open: true,
-    hot: true
+    hot: true,
+    liveReload: true,
+    watchFiles: ['src/**/*', 'index.html']
   },
-  mode: 'development' 
+  mode: 'development'
 };

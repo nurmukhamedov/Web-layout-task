@@ -1,0 +1,28 @@
+@mixin media-main($breakpoint) {
+    @media screen and (max-width: $breakpoint) {
+        @content;
+    }
+}
+
+@mixin center-item() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-item() {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex-item-between() {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin flex-item-gap($gap) {
+    display: flex;
+    align-items: center;
+    gap: $gap;
+}
