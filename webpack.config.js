@@ -8,7 +8,7 @@ module.exports = {
   output: {
     filename: 'js/bundle.[contenthash].js',
     path: path.resolve(__dirname, 'dist'),
-    assetModuleFilename: 'images/[name][ext]',
+    assetModuleFilename: 'images/[name][ext]',cle
     clean: true
   },
   module: {

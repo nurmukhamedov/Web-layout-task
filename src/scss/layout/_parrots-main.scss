@@ -115,8 +115,8 @@
         transition: 0.3s;
 
         &:hover .parrots__item__modal {
-            opacity: 1;
-            visibility: visible;
+            opacity: 0;
+            visibility: hidden;
         }
 
         &__modal {
@@ -124,8 +124,8 @@
             bottom: 52px;
             left: 50%;
             transform: translateX(-50%);
-            max-width: 247px;
-            width: 100%;
+            width: 170%;
+            max-width: 300px;
             background-color: #000000CC;
             display: flex;
             flex-direction: column;
@@ -138,6 +138,15 @@
             font-family: $secondary_font;
             opacity: 0;
             visibility: hidden;
+
+            @include media-main(992px) {
+                width: 100%;
+            }
+
+            &:hover {
+                opacity: 1;
+                visibility: visible;
+            }
 
             &__polygon {
                 position: absolute;
@@ -201,6 +210,11 @@
                 background-color: #fff;
                 color: $button_bg_color;
                 border-color: $button_bg_color;
+            }
+
+            &:hover~.parrots__item__modal {
+                opacity: 1;
+                visibility: visible;
             }
         }
     }
